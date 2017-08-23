@@ -3,14 +3,21 @@ set hlsearch
 set nocompatible
 "set number
 set paste
+"" vim修改tab为四个空格：Method 1
+"set tabstop=4
 "set autoindent
+"set expandtab
+""
 set smartindent
 set showmatch
 set ruler
 set incsearch
+"" vim修改tab为四个空格：Method 2
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+set expandtab "set noexpandtab
+""
 set cindent
 set nobackup
 set clipboard+=unnamed
