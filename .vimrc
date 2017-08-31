@@ -3,6 +3,8 @@ set hlsearch
 set nocompatible
 "set number
 set paste
+"" set viminfo to enable 'y' more lines
+set viminfo='1000,f1,<1000
 "" vim修改tab为四个空格：Method 1
 "set tabstop=4
 "set autoindent
