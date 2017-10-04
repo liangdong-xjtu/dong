@@ -116,12 +116,14 @@ fi
 ##############################################################################
 # Newly added by Dong Liang
 
-#HOME=/home/dong/src_repository
-source /home/dong/src_repository/Pub/acd_func.sh
-export LD_LIBRARY_PATH=/home/dong/src_repository/Pub/lib
+#HOME=$HOME/src_repository
+PUB=$HOME/src_repository/Pub
+
+source $PUB/shell_scripts/acd_func.sh
+export LD_LIBRARY_PATH=$PUB/lib
 #export DISPLAY=localhost:10.0
 #export DISPLAY="localhost:0.0"
-PATH=/home/dong/src_repository/Pub/pycharm-community-2017.2/bin:$PATH
+PATH=$PUB/pycharm-community-2017.2/bin:$PATH
 
 ctags_cscope_func() {
     ctags -R --file-scope=yes --langmap=c:+.h --languages=c,c++ --links=yes --c-kinds=+p --c++-kinds=+p --fields=+iaS --extra=+q
@@ -140,7 +142,10 @@ alias ga='git add'
 alias gc='git commit'
 #alias gr='git reset HEAD'
 
-alias ll='ls -l'
+alias ll='ls -alh'
 alias lh='ls -lh'
 alias lr='ls -lRh'
-alias la='ls -a'
+alias la='ls -A'
+
+alias sos='sudo -s'
+alias Kexec='$PUB/shell_scripts/kexec.sh'
