@@ -119,11 +119,11 @@ fi
 #HOME=$HOME/src_repository
 PUB=$HOME/src_repository/Pub
 
-source $HOME/src_repository/Pub/acd_func.sh
-export LD_LIBRARY_PATH=$HOME/src_repository/Pub/lib
+source $PUB/shell_scripts/acd_func.sh
+export LD_LIBRARY_PATH=$PUB/lib
 #export DISPLAY=localhost:10.0
 #export DISPLAY="localhost:0.0"
-PATH=$HOME/src_repository/Pub/pycharm-community-2017.2/bin:$PATH
+PATH=$PUB/pycharm-community-2017.2/bin:$PATH
 
 ctags_cscope_func() {
     ctags -R --file-scope=yes --langmap=c:+.h --languages=c,c++ --links=yes --c-kinds=+p --c++-kinds=+p --fields=+iaS --extra=+q
